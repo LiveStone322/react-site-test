@@ -1,0 +1,17 @@
+@import './shared/styles/colors.scss';
+
+body {
+  margin: 0;
+  background-color: $background-color;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+html {
+  font-size: 12px;
+}
+
+* {
+  font-family: 'Montserrat';
+  weight: normal;
+}

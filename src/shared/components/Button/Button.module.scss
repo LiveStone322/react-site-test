@@ -1,0 +1,21 @@
+@import '../../styles/colors.scss';
+@import '../../styles/mixins.scss';
+
+.btn {
+  position: relative;
+  padding: 0.66em 1em;
+  font-weight: bold;
+  font-size: 2rem;
+  background: $color-1;
+  cursor: pointer;
+  border: none;
+  outline: none;
+  border-radius: 0.66em;
+  color: $background-color;
+  @include shadow($color-1);
+
+  &:hover {
+    background: $color-2;
+    @include shadow($color-2);
+  }
+}

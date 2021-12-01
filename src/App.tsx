@@ -1,25 +1,27 @@
-import React from 'react';
-import logo from './logo.svg';
-import './App.css';
+import React from "react";
+import "./App.scss";
+import Button from "./shared/components/Button/Button";
+import CodePane from "./shared/components/CodePane/CodePane";
+import Menu from "./components/Menu/Menu";
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.tsx</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <>
+      <div style={{ position: "absolute", top: "64px", left: "64px" }}>
+        <Button text="Test" />
+      </div>
+      <div style={{ position: "absolute", top: "300px", left: "64px" }}>
+        <CodePane>
+          <>
+            TestTestTestTestTestTestTestTestTest TestTestTest Test TestTestTestTestTest  TestTest TestTestTest
+          </>
+        </CodePane>
+      </div>
+      <div style={{ position: "absolute", top: "500px", left: "64px" }}>
+        <Menu />
+      </div>
+      
+    </>
   );
 }
 

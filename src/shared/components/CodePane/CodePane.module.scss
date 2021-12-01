@@ -1,0 +1,38 @@
+@import '../../styles/colors.scss';
+@import '../../styles/mixins.scss';
+
+$pane-width: 270px;
+$circle-color-one: #FC5185;
+$circle-color-two: #ECA858;
+$circle-color-three: #43DDE6;
+
+.pane {
+  font-family: 'Fira Code', 'Consolas', sans-serif;
+  font-size: 1rem;
+  padding: 2.1em 0.66em 1.2em 0.66em ;
+  background-color: #F0F0F0;
+  border-radius: 0.66em;
+  width: $pane-width;
+  @include shadow;
+
+  &__circle {
+    width: 1em;
+    height: 1em;
+    border-radius: 50%;
+    position: absolute;
+    top: 0.33em;
+    box-shadow: inset 0px 4px 4px rgba(0, 0, 0, 0.1);
+    &_one {
+      background: $circle-color-one;
+      left: 0.66em;
+    }
+    &_two {
+      background: $circle-color-two;
+      left: 2em;
+    }
+    &_three {
+      background: $circle-color-three;
+      left: 3.33em;
+    }
+  }
+}
